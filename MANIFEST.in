@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include approved_accounting *.css
+recursive-include approved_accounting *.csv
+recursive-include approved_accounting *.html
+recursive-include approved_accounting *.ico
+recursive-include approved_accounting *.js
+recursive-include approved_accounting *.json
+recursive-include approved_accounting *.md
+recursive-include approved_accounting *.png
+recursive-include approved_accounting *.py
+recursive-include approved_accounting *.svg
+recursive-include approved_accounting *.txt
+recursive-exclude approved_accounting *.pyc
