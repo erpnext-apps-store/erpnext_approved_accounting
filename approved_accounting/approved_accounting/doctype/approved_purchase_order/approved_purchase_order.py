@@ -4,7 +4,7 @@
 
 from __future__ import unicode_literals
 # import frappe
-from erpnext.erpnext.buying.doctype.purchase_order.purchase_order import PurchaseOrder
+from erpnext.buying.doctype.purchase_order.purchase_order import PurchaseOrder
 
 class ApprovedPurchaseOrder(PurchaseOrder):
 	def __init__(self, *args, **kwargs):
