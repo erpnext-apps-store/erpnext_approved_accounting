@@ -12,4 +12,3 @@ class ApprovedPurchaseOrder(PurchaseOrder):
 
 	def validate(self):
 		super(ApprovedPurchaseOrder, self).validate()
-`

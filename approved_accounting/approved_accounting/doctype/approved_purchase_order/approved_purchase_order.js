@@ -41,7 +41,6 @@ frappe.ui.form.on('Approved Purchase Order', {
 				filters: {'company': frm.doc.company}
 			}
 		});
-
 	},
 
 	refresh: function(frm) {
@@ -70,7 +69,7 @@ frappe.ui.form.on('Approved Purchase Order', {
 	}
 });
 
-frappe.ui.form.on("Purchase Order Item", {
+frappe.ui.form.on("Approved Purchase Order Item", {
 	schedule_date: function(frm, cdt, cdn) {
 		var row = locals[cdt][cdn];
 		if (row.schedule_date) {
@@ -559,7 +558,7 @@ function set_schedule_date(frm) {
 
 frappe.provide("erpnext.buying");
 
-frappe.ui.form.on("Purchase Order", "is_subcontracted", function(frm) {
+frappe.ui.form.on("Approved Purchase Order", "is_subcontracted", function(frm) {
 	if (frm.doc.is_subcontracted === "Yes") {
 		erpnext.buying.get_default_bom(frm);
 	}
