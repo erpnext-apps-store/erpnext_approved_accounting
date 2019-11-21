@@ -82,7 +82,7 @@ frappe.ui.form.on("Approved Purchase Order Item", {
 	}
 });
 
-erpnext.buying.PurchaseOrderController = erpnext.buying.BuyingController.extend({
+erpnext.buying.ApprovedPurchaseOrderController = erpnext.buying.BuyingController.extend({
 	refresh: function(doc, cdt, cdn) {
 		var me = this;
 		this._super();
@@ -517,7 +517,7 @@ erpnext.buying.PurchaseOrderController = erpnext.buying.BuyingController.extend(
 });
 
 // for backward compatibility: combine new and previous states
-$.extend(cur_frm.cscript, new erpnext.buying.PurchaseOrderController({frm: cur_frm}));
+$.extend(cur_frm.cscript, new erpnext.buying.ApprovedPurchaseOrderController({frm: cur_frm}));
 
 cur_frm.cscript.update_status= function(label, status){
 	frappe.call({

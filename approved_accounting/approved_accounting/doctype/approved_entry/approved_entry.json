@@ -1,0 +1,49 @@
+{
+ "creation": "2019-11-21 11:42:03.442326",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "for_approval",
+  "approvers"
+ ],
+ "fields": [
+  {
+   "fieldname": "for_approval",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "For Approval",
+   "options": "Payment Entry",
+   "reqd": 1
+  },
+  {
+   "fieldname": "approvers",
+   "fieldtype": "Table",
+   "label": "Approvers",
+   "options": "Approver Row"
+  }
+ ],
+ "modified": "2019-11-21 15:17:37.386375",
+ "modified_by": "Administrator",
+ "module": "Approved Accounting",
+ "name": "Approved Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
